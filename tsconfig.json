@@ -4,7 +4,7 @@
     "jsx": "react-jsx",
     "declarationDir": "dist"
   },
-  "files": ["src/sureapp-doggos.tsx"],
+  "files": ["src/jeffweim-doggos.tsx"],
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]
 }

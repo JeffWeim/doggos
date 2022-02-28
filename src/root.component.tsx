@@ -1,3 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Doggos from "./Doggos";
+
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/doggos" element={<Doggos />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
