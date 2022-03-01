@@ -1,0 +1,8 @@
+.doggos {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 600px;
+}
