@@ -9,20 +9,14 @@ interface IHomePageProps {
   data: {
     allContentfulDogBreed: {
       nodes: {
-        barkingTendencies: number;
         description: {
           raw: string;
           references: [];
         };
-        energyLevel: number;
-        goodForSmallHomes: number;
-        id: string;
         image: {
           url: string;
         };
         name: string;
-        trainingNeeds: number;
-        updatedAt: string;
         slug: string;
       }[];
     };
@@ -53,15 +47,9 @@ export const query = graphql`
   query AllBreedsQuery {
     allContentfulDogBreed(sort: { name: ASC }) {
       nodes {
-        barkingTendencies
-        goodForSmallHomes
-        trainingNeeds
-        updatedAt(locale: "")
         description {
           raw
         }
-        energyLevel
-        id
         image {
           url
         }

@@ -8,6 +8,11 @@ export const StyledRating = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 275px;
+  margin-bottom: 275px;
+
+  @media screen and (min-width: ${({ theme }) => theme.mediaQueries.tablet}) {
+    margin-bottom: 0;
+  }
 `;
 
 export const RatingCell = styled.div<TRatingCellProps>`

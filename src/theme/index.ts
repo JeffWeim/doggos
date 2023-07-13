@@ -17,6 +17,7 @@ const theme: TTheme = {
 
     background: '#ffffff',
     border: 'rgb(231, 237, 246)',
+    divider: '#e6ecf0',
     shadow: 'rgba(0, 0, 0, 0.04)',
   },
   mediaQueries: {
@@ -46,7 +47,7 @@ const theme: TTheme = {
     body1: `18px`,
     body2: `16px`,
     body3: `12px`,
-    caption: `var(--theme-font-size-caption)`,
+    caption: `10px`,
   },
 };
 

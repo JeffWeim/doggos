@@ -34,6 +34,10 @@ const Rating = (props: TRatingProps) => {
           {generateRating(rating.ratingValue)}
         </Row>
       ))}
+
+      <Text variant="caption">
+        <sup>*</sup> 1 = lower score, 5 = higher score
+      </Text>
     </StyledRating>
   );
 };

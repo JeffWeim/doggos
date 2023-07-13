@@ -5,7 +5,7 @@ import { StyledText } from './styles';
 export type TTextProps = {
   className?: string;
   children: React.ReactNode;
-  variant?: 'body1' | 'body2' | 'body3';
+  variant?: 'body1' | 'body2' | 'body3' | 'caption';
   as?: 'p' | 'span';
 };
 

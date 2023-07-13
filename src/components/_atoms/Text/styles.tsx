@@ -19,11 +19,16 @@ export const StyledText = styled.p<TStyledText>`
           font-size: ${({ theme }) => theme.typography.body2};
           margin: 0 0 ${({ theme }) => theme.spacing.sm};
         `;
-      // body3
-      default:
+      case 'body3':
         return css`
           font-size: ${({ theme }) => theme.typography.body3};
           margin: 0 0 ${({ theme }) => theme.spacing.sm};
+        `;
+      // caption
+      default:
+        return css`
+          font-size: ${({ theme }) => theme.typography.caption};
+          margin: 0 0 ${({ theme }) => theme.spacing.xs};
         `;
     }
   }};

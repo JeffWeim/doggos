@@ -14,8 +14,9 @@ export type TTheme = {
     green: string;
 
     background: string;
-    shadow: string;
     border: string;
+    divider: string;
+    shadow: string;
   };
   mediaQueries: {
     tablet: string;

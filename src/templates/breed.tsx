@@ -2,6 +2,7 @@ import React from 'react';
 
 import Anchor from '@@/components/_atoms/Anchor';
 import Heading from '@@/components/_atoms/Heading';
+import HR from '@@/components/_atoms/HR';
 import Text from '@@/components/_atoms/Text';
 import Container from '@@/components/_layout/Container';
 import Rating from '@@/components/_molecules/Rating';
@@ -28,6 +29,9 @@ interface IBreedPageProps {
           name: string;
           trainingNeeds: number;
           updatedAt: string;
+          shedLevel: number;
+          lifeExpectancy: string;
+          originationLocation: string;
         };
       }[];
     };
@@ -66,8 +70,18 @@ const HomePage = (props: IBreedPageProps) => {
 
       <Text as="span">{renderRichText(description)}</Text>
 
+      <HR />
+
+      <Heading variant="h2">Doggo Stats</Heading>
+
+      <Heading variant="h3">Life expectancy: {breed.lifeExpectancy}</Heading>
+      <Heading variant="h3">
+        Origination location: {breed.originationLocation}
+      </Heading>
+
       <Rating
         ratings={[
+          { label: 'Shed level', ratingValue: breed.shedLevel },
           { label: 'Training needs', ratingValue: breed.trainingNeeds },
           { label: 'Barking Tendencies', ratingValue: breed.barkingTendencies },
           { label: 'Energy level', ratingValue: breed.energyLevel },
@@ -102,6 +116,9 @@ export const query = graphql`
           slug
           trainingNeeds
           updatedAt
+          shedLevel
+          lifeExpectancy
+          originationLocation
         }
       }
     }

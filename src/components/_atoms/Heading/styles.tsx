@@ -24,7 +24,7 @@ export const StyledHeading = styled.p<TStyledHeading>`
       case 'h3':
         return css`
           font-size: ${({ theme }) => theme.typography.display3};
-          margin: 0 0 ${({ theme }) => theme.spacing.md};
+          margin: 0 0 ${({ theme }) => theme.spacing.lg};
         `;
       case 'h4':
         return css`
