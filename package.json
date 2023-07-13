@@ -1,0 +1,63 @@
+{
+  "name": "calendly",
+  "version": "1.0.0",
+  "private": true,
+  "description": "calendly",
+  "author": "Jeff Weimer",
+  "keywords": [
+    "gatsby"
+  ],
+  "engines": {
+    "npm": "please-use-yarn",
+    "node": "18",
+    "yarn": ">=1.22.10"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "2.1.4",
+    "gatsby": "5.11.0",
+    "gatsby-image": "3.11.0",
+    "gatsby-plugin-image": "3.11.0",
+    "gatsby-plugin-layout": "4.11.0",
+    "gatsby-plugin-sharp": "5.11.0",
+    "gatsby-plugin-styled-components": "6.11.0",
+    "gatsby-source-contentful": "8.11.0",
+    "gatsby-transformer-sharp": "5.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "6.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.5",
+    "@babel/eslint-parser": "7.19.1",
+    "@babel/preset-env": "7.22.9",
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "@typescript-eslint/eslint-plugin": "5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "dotenv": "16.3.1",
+    "eslint": "8.29.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.5.2",
+    "eslint-plugin-chai-friendly": "0.7.2",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.5.1",
+    "typescript": "5.1.6"
+  }
+}
