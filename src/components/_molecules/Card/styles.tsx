@@ -31,12 +31,7 @@ export const Container = styled.div`
 `;
 
 export const Description = styled.div`
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  display: -webkit-box;
   margin: 0 0 ${({ theme }) => theme.spacing.md};
-  max-width: 200px;
-  overflow: hidden;
 `;
 
 export const Image = styled.img`

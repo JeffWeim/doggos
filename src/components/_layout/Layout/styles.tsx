@@ -9,11 +9,7 @@ export const Main = styled.main`
 
   @media screen and (min-width: ${({ theme }) => theme.mediaQueries.tablet}) {
     background-size: cover;
-    /* prettier-ignore */
-    height: calc(
-      100vh - ${({ theme }) =>
-      `${theme.constants.navAndFooterCombinedHeight}px`}
-    );
-    min-height: 100%;
+    height: auto;
+    padding-bottom: 300px;
   }
 `;

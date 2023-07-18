@@ -27,7 +27,12 @@ const Card = (props: TCardProps) => {
           height: 120,
         }}
       />
-      <Description>{renderRichText(breed.description)}</Description>
+      <Description>
+        {renderRichText(breed.description, {
+          renderText: (text: string) =>
+            text.length > 200 ? `${text.slice(0, 200 - 1).trim()}...` : text,
+        })}
+      </Description>
       <Button as="a" href={`/${breed.slug}`}>
         Learn more
       </Button>
